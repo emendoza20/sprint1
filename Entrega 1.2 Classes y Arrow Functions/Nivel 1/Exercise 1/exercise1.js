@@ -1,4 +1,8 @@
-let Greeting= (name ) =>  console.log( `${name}  `);
+ 
+
+let Operation = (a, b) => a + b;
 
 
-Greeting("Jhon")
+ let Result=Operation(5,3)
+
+console.log(Result)
