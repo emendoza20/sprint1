@@ -1,4 +1,9 @@
+
  const array_of_functions= [
+    function() {count()},
+    function() {count()},
+    function() {count()},
+    function() {count()},
     function() {count()},
     function() {count()},
     function() {count()},
@@ -14,10 +19,10 @@ let count=()=> numbers.forEach(element=>console.log(element));
 /***function count(){
     numbers.forEach(element=>console.log(element));
 }***/
- /*for (i = 0; i < array_of_functions.length; i++) {
-    array_of_functions[i]();
-}*/
+ for (let i = 0; i < array_of_functions.length; i++) {
+        console.log(`llamada ${i}` )
+        array_of_functions[i]();
+}
 
-array_of_functions.forEach(function(value) {
-    console.log('The current letter is: ' + value;
-  });
+//array_of_functions.forEach(index=> array_of_functions[index]())
+  
