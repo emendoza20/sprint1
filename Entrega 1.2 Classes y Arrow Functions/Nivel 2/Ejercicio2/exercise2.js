@@ -1,5 +1,10 @@
-
-const showUser= user => ({ name: user.name});
-const user = { name: "Elizabeth" };
+let Person = {
+   nom: "Elizabeth",
     
-console.log(showUser(user));
+  };
+  
+  Person.dirNom= () =>{console.log(Person.nom)}
+  
+  Person.dirNom(); 
+
+ 

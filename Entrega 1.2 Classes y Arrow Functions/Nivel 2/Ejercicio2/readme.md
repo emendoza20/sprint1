@@ -1,7 +1,7 @@
 ⭐⭐ Nivell 2
-- Exercici 1
-Crea una arrow function que, rebent un paràmetre, retorni un objecte amb un atribut que tingui com a valor el paràmetre rebut.
+- Exercici 2
+Crea una classe "Persona" que rebi un paràmetre 'nom' en ser instanciada. La classe inclourà un mètode dirNom que imprimeixi per consola el paràmetre 'nom'. Invoca el mètode dirNom des de fora de la classe.
 
 **Desarrollo:**
 
-a)Se crea el arrow function que contiene un objeto denominado usuario que tiene como valor un nombre y mostrara ese parametro recibido por consola.
+a) Se crea la clase persona con el paramentro nombre y se crea el metodo dirNom mediante un arr
