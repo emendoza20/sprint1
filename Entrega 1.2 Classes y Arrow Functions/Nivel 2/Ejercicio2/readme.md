@@ -4,4 +4,4 @@ Crea una classe "Persona" que rebi un paràmetre 'nom' en ser instanciada. La cl
 
 **Desarrollo:**
 
-a) Se crea la clase persona con el paramentro nombre y se crea el metodo dirNom mediante un arr
+a) Se crea la clase persona con el parametro nombre y se crea el metodo dirNom mediante un array function que muestre por consola el nombre dentro de la clase .Luego fuera de la case se invoca el metodo de la clase Persona para que muestro el nombre

@@ -3,7 +3,7 @@ let Person = {
     
   };
   
-  Person.dirNom= () =>{console.log(Person.nom)}
+Person.dirNom= () =>{console.log(Person.nom)}
   
   Person.dirNom(); 
 
