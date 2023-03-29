@@ -23,3 +23,8 @@ let salaries = [{
     id: 3,
     salary: 2000
 }];
+
+Desarrollo:
+
+
+https://dev.to/duxtech/es6-promesas-en-javascript-5bpb
