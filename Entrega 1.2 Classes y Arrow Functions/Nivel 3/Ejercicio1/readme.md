@@ -6,11 +6,5 @@ Una Promise es un objeto que representa la terminación o fracaso de una operaci
 Usa el intérprete de node en todos los casos.
 
 Nivel 1
-**- Ejercicio 1**
-Crea una función que devuelva una Promise que invoque la función resolve() o reject() que recibe. Invócala pasándole las dos funciones de forma que impriman un mensaje diferente dependiendo de si la Promise se resuelve o no.
- 
- desarrollo:
-
- 1) Creo la funcion que devuelve la promesa:
-Crear una promesa:
-Las promesas se crean usando un constructor llamado Promise y pasándole una función que recibe dos parámetros, resolve y reject, que nos permiten indicarle a esta que se resolvió o se rechazó.
+**- Ejercicio 2**
+Crea una arrow function que reciba un parámetro y una función callback y le pase a la función un mensaje u otro (que se imprimirá por consola) en función del parámetro recibido.

@@ -1,9 +1,11 @@
-let Person = {
-   nom: "Elizabeth",
-  };
-  
-Person.dirNom= () =>{console.log(Person.nom)}
-  
-  Person.dirNom(); 
+const count = true;
 
- 
+let countValue = new Promise(function (resolve, reject) {
+    if (count) {
+        resolve("There is a count value.");
+    } else {
+        reject("There is no count value");
+    }
+});
+
+console.log(countValue);
