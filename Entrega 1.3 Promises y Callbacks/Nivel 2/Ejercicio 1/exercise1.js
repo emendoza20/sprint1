@@ -38,28 +38,9 @@ const getEmployee=(id) => {
     });
 
 }
-getEmployee(1);
+getEmployee(1)
+myPromise
+.then((mensaje) => console.log(mensaje))
+  .catch((error) => console.log(error))
+// 'ERROR: Something went wrong!'
 
-
-var promise = new Promise(function(resolve, reject) {
-  
-    function sayHello() {
-      resolve('Hello World!')
-    }
-  
-    reject('Something went wrong!!')
-  
-    setTimeout(sayHello, 10000)
-  
-  })
-  
-  promise
-    .then(function(message) {
-      console.log(message)
-    })
-    .catch(function(err) {
-      console.error('ERROR: ' + err)
-    })
-  
-  // 'ERROR: Something went wrong!'
-  
