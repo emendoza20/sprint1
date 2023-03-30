@@ -25,6 +25,7 @@ let salaries = [{
 }];
 
 Desarrollo:
+a) creo un arrow funcion getEmployee con el parametro id que hay que encontrar, se construye la funcion Promesa con sus parametros resolve y reject, luego se realiza la busqueda del id del empleado con el metodo find y si es encontrado se retornara la promesa exitosamente, si no será rechazada
 
 
-https://dev.to/duxtech/es6-promesas-en-javascript-5bpb
+notas: https://dev.to/duxtech/es6-promesas-en-javascript-5bpb
