@@ -7,7 +7,7 @@ class Persona {
         throw new Error("No se puede instanciar una clase abstracta")
       };
     }
-    dadesPersona() {
+    InfoPersona() {
       console.log(this.name + " " + this.surname);
     }
   }
@@ -29,6 +29,6 @@ class Persona {
   const persona2 = f2("Benito", "Camela");
   const persona3 = f2("Elver", "Galarga");
   
-  persona1.dadesPersona()
-  persona2.dadesPersona()
-  persona3.dadesPersona()
+  persona1.InfoPersona()
+  persona2.InfoPersona()
+  persona3.InfoPersona()
