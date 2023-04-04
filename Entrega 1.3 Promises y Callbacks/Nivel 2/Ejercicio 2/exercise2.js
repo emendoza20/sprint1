@@ -29,27 +29,20 @@ let salaries = [
   },
 ];
 
-/*const getSalary = (employe) => {
-
-  for (let i = 0; i <= salaries.length; i++) {
-    if (salaries[i].id === employe.id) {
-         console.log(salaries[i].salaries)
-    }
-  }
-};
-getSalary(employees[1]);*/
-
-
-const  getSalary  = (employe) => {
+const getSalary = (employee) => {
   return new Promise((resolve, reject) => {
-     // condition
-     const finder = salaries.find((elemento) => elemento.id === employe.id);
-     if (finder) {
-      resolve(console.log(finder.salary));
-    } else {
-      reject("Promise is rejected");
-    }
- });  
- 
- };
-getSalary (employees[0])
+      if (employee != undefined) {
+          for (let i= 0; i < salaries.length; x++) {
+              if (salaries[i].id === employee.id) {
+                 
+                  resolve(salaries[i].salary)
+              }
+          }
+      }
+      reject(`Salary not found`);
+  });
+}
+
+getSalary(employees[4])
+.then((salary) => console.log(`El salario es ${salary}`))
+.catch((error) => console.log(error));
