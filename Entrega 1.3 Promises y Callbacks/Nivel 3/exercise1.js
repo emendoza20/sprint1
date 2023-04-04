@@ -36,7 +36,7 @@ const getEmployee = (id) => {
      if (finder) {
        resolve(finder);
      } else {
-       reject("No existe ese usuario");
+       reject("ERROR No existe ese usuario");
      }
  
    });
@@ -56,7 +56,7 @@ const getEmployee = (id) => {
   });
 }
 
-getEmployee(2)
+getEmployee(4)
   .then((employee) => {
     console.log(`Empleado encontrado: ${employee.name}`);
     return getSalary(employee);
@@ -64,4 +64,6 @@ getEmployee(2)
   .then((salary) => {
     console.log(`El salario es ${salary}`);
   })
- 
+  .catch((error) => {
+    console.log(error);
+  });
