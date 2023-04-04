@@ -39,7 +39,7 @@ const getSalary = (employee) => {
               }
           }
       }
-      reject(`Salary not found`);
+      reject(`Salario no encontrado`);
   });
 }
 
