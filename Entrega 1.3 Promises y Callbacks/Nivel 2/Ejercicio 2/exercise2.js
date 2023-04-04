@@ -32,7 +32,7 @@ let salaries = [
 const getSalary = (employee) => {
   return new Promise((resolve, reject) => {
       if (employee != undefined) {
-          for (let i= 0; i < salaries.length; x++) {
+          for (let i= 0; i < salaries.length; i++) {
               if (salaries[i].id === employee.id) {
                  
                   resolve(salaries[i].salary)

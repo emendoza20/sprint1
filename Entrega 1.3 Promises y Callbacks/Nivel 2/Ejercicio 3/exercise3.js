@@ -1,4 +1,4 @@
-debugger;
+debugger
 let employees = [
   {
     id: 1,
@@ -29,12 +29,41 @@ let salaries = [
   },
 ];
 
-const getSalary = (employe) => {
+const getEmployee = (id) => {
+  return new Promise((resolve, reject) => {
+     // condition
+     const finder = employees.find((elemento) => elemento.id === id);
+     if (finder) {
+       resolve(finder);
+     } else {
+       reject("No existe ese usuario");
+     }
+ 
+   });
+ 
+ };
+ const getSalary = (employee) => {
+  return new Promise((resolve, reject) => {
+      if (employee != undefined) {
+          for (let i= 0; i < salaries.length; i++) {
+              if (salaries[i].id === employee.id) {
+                 
+                  resolve(salaries[i].salary)
+              }
+          }
+      }
+      reject(`Salario no encontrado`);
+  });
+}
 
-  for (let i = 0; i <= salaries.length; i++) {
-    if (salaries[i].id === employe.id) {
-         console.log(salaries[i].salaries)
-    }
-  }
-};
-getSalary(employees[1]);
+getEmployee(4)
+  .then((employee) => {
+    console.log(`Empleado encontrado: ${employee.name}`);
+    return getSalary(employee);
+  })
+  .then((salary) => {
+    console.log(`El salario es ${salary}`);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
