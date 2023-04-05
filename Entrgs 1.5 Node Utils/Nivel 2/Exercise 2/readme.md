@@ -1,3 +1,3 @@
 ***Ejercicio 2****
  
-Crea otra función que muestre por consola el contenido del archivo del ejercicio anterior.
+Crea una función que liste por la consola el contenido del directorio de usuario del ordenador utilizando Node Child Processes.
