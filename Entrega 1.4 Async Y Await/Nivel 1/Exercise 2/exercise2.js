@@ -4,14 +4,17 @@ const functPromise = () => {
   }) 
 }
 
-const functAsincrona = async () => {
+const functAsincrona = async (arg) => {
+  if (arg) {
+    throw new Error('La función no espera argumentos');
+  }
   try {
       const result = await functPromise();
-      console.log(result)
+      return result;
     }
     catch(err) {
-      console.log(err.message)
+      throw new Error('Hubo un error en la función asíncrona');
     } 
 }
 
-functAsincrona();
+functAsincrona("algo");
