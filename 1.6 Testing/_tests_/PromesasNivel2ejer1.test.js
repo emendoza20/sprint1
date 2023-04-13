@@ -19,3 +19,37 @@ describe("Test de funciones asincronas", () => {
     await expect(getSalary(employee)).rejects.toBe("Salario no encontrado");
   });
 });
+
+// Prueba con un id que no existe
+test("getEmployee con id inexistente debe rechazar la promesa", () => {
+  expect.assertions(1);
+  return getEmployee(4).catch((error) => {
+    expect(error).toMatch("Promise is rejected");
+  });
+});
+
+// Prueba con un objeto employee indefinido
+test("getSalary con employee indefinido debe rechazar la promesa", () => {
+  expect.assertions(1);
+  return getSalary(undefined).catch((error) => {
+    expect(error).toMatch("Salario no encontrado");
+  });
+});
+
+// Prueba con un objeto employee sin id
+test("getSalary con objeto employee sin id debe rechazar la promesa", () => {
+  expect.assertions(1);
+  const employee = { name: "Steve Jobs" };
+  return getSalary(employee).catch((error) => {
+    expect(error).toMatch("Salario no encontrado");
+  });
+});
+
+// Prueba con un id que no existe en el arreglo salaries
+test("getSalary con id inexistente debe rechazar la promesa", () => {
+  expect.assertions(1);
+  const employee = { id: 4 };
+  return getSalary(employee).catch((error) => {
+    expect(error).toMatch("Salario no encontrado");
+  });
+});
