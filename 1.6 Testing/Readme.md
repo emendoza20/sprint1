@@ -1,14 +1,12 @@
-****Inicio del Proyecto testing :test_tube:**
+**Inicio del Proyecto testing :test_tube:**
 
-***1)npm init -y***
+1)npm init -y***
 
-***2)npm install --save jest**
+2)npm install --save jest**
 
-***3)npm test***
+3)npm test***
 
-
-***----------------------------------------------------------------------------------------------------------------------***
-NIVELL 1 :star:
+**NIVELL 1** :star:
 
 a) <sub>Crea un arxiu amb les funcions sumar, restar, multiplicar i dividir dos o més operands. Testeja la correcta execució d'aquestes funcions.</sub> :white_check_mark:
 
