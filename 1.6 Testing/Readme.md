@@ -1,10 +1,10 @@
-**Inicio del Proyecto testing :test_tube:**
+**Inicio del Proyecto testing Entrega 1.6 del Sprint 1  :test_tube:**
 
-1)npm init -y***
+1)npm init -y
 
-2)npm install --save jest**
+2)npm install --save jest
 
-3)npm test***
+3)npm test
 
 **NIVELL 1** :star:
 
