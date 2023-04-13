@@ -1,10 +1,33 @@
-const ValidaEmail=require('./validaemail')
+const EmailValidator = require("./EmailValidator");
 
-test('email emendoza867@gmail.com -> true',()=>{
-    expect(ValidaEmail.isValidaEmail(' emendoza867@gmail.com')).toBe(true)
+describe('Given emailValidator', () => {
+    describe('When I call to isValidEmail with a valid email', () => {
+        test("Then should be truthy", () => {
+        
+            // given
+            const emailValidator = new EmailValidator()
+            const email = 'a@gmail.com'
+        
+            // when
+            const result = emailValidator.isValidEmail(email)
+        
+            // then
+            expect(result).toBeTruthy()
+        });
+    })
 
-});
-test('email 1 -> false',()=>{
-    expect(ValidaEmail.isValidaEmail(' 1')).toBe(false)
-
-});
+    describe('When I call to isValidEmail with a NOT valid email', () => {
+        test("Then should be falsy", () => {
+        
+            // given
+            const emailValidator = new EmailValidator()
+            const email = 'hola mundo'
+        
+            // when
+            const result = emailValidator.isValidEmail(email)
+        
+            // then
+            expect(result).toBeFalsy()
+        });
+    })
+})
