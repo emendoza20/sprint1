@@ -1,11 +1,24 @@
-const sumOfNumber = require('../app/sumOfNumber.js');
-const { advanceTimersByTime } = require('jest-fake-timers');
+const sumOfNumber = require('../app/sumOfNumber');
 
-test('sumOfNumber should return the sum of the doubled values after 6 seconds', async () => {
-  jest.useFakeTimers();
-  const sumPromise = sumOfNumber(1, 2, 3);
-  jest.advanceTimersByTime(2000); // Advance 2 seconds
-  const result = await sumPromise;
-  jest.advanceTimersByTime(4000); // Advance remaining 4 seconds
-  expect(result).toBe(12);
-}, 10000);
+
+describe('sumOfNumber', () => {
+  beforeEach(() => {
+    jest.useFakeTimers();
+  });
+
+  afterEach(() => {
+    jest.useRealTimers();
+  });
+
+  test('should return the correct sum of numbers', async () => {
+    const result = await sumOfNumber(1, 2, 3);
+    expect(result).toBe(12);
+  });
+
+  test('should wait for all promises to resolve', async () => {
+    const promise = sumOfNumber(1, 2, 3);
+    jest.runAllTimers();
+    const result = await promise;
+    expect(result).toBe(12);
+  });
+});
