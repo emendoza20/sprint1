@@ -17,6 +17,6 @@ c) <sub> Crea els tests corresponents per verificar el funcionament de les funci
 d) <sub> Crea els tests corresponents per verificar el funcionament de l'exercici Async / Await N1 E2.</sub> :speech_balloon:
 
 **NIVELL 2** :star: :star:
-a)<sub>Verifica mitjançant tests l'execució de l'exercici Async / Await N2 E1 utilitzant Jest **Fake Timers**. </sub>
 
+a) <sub>Verifica mitjançant tests l'execució de l'exercici Async / Await N2 E1 utilitzant Jest **Fake Timers**. </sub>
 <sub>  ***Archivos*** : **sumOfNumber.js** y **sumOfNumber.test.js**</sub>
