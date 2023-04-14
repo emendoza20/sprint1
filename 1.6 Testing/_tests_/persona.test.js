@@ -1,17 +1,20 @@
 const Persona = require('../app/persona');
 
-describe('Persona', () => {
-  it('debe llamar al constructor con los argumentos adecuados', () => {
-    const constructorMock = jest.fn();
-    const persona = new constructorMock('Elizabeth');
-    expect(constructorMock).toHaveBeenCalledWith('Elizabeth');
+describe('Person class', () => {
+  it('should call the constructor with the correct argument', () => {
+    const mockConstructor = jest.fn();
+    const person = new mockConstructor("Elizabeth");
+
+    expect(mockConstructor).toHaveBeenCalledWith("Elizabeth");
   });
-  
-  it('debe llamar al método dirNombre()', () => {
-    const dirNombreMock = jest.fn();
-    const persona = new Persona('Elizabeth');
-    persona.dirNombre = dirNombreMock;
-    persona.dirNombre();
-    expect(dirNombreMock).toHaveBeenCalled();
+
+  it('should call the dirNom method with the correct argument', () => {
+    const person = new Persona("Moises");
+    const mockDirNom = jest.spyOn(person, 'dirNom');
+    person.dirNom();
+
+    expect(mockDirNom).toHaveBeenCalled();
   });
 });
+
+ 
