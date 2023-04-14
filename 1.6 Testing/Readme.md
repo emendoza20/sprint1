@@ -8,7 +8,7 @@
 
 **NIVELL 1** :star:
 
-a) <sub>Crea un arxiu amb les funcions sumar, restar, multiplicar i dividir dos o més operands. Testeja la correcta execució d'aquestes funcions.</sub> :white_check_mark:
+a) <sub>Crea un arxiu amb les funcions sumar, restar, multiplicar i dividir dos o més operands. Testeja la correcta execució d'aquestes funcions. ***Archivos*** => **operciones.js** y **operaciones.test.js**</sub> :white_check_mark:
 
 b) <sub> Crea els tests corresponents per verificar el funcionament de les dues funcions de l'exercici Promises i Callbacks N1 E2.</sub> :white_check_mark:
 
@@ -19,4 +19,4 @@ d) <sub> Crea els tests corresponents per verificar el funcionament de l'exercic
 **NIVELL 2** :star: :star:
 
 a) <sub>Verifica mitjançant tests l'execució de l'exercici Async / Await N2 E1 utilitzant Jest Fake Timers. </sub>
-<sub>  ***Archivos*** => **sumOfNumber.js** y **sumOfNumber.test.js**</sub>
+<sub>  ***Archivos*** => **sumOfNumber.js** y **sumOfNumber.test.js**</sub>  :star: :star:
