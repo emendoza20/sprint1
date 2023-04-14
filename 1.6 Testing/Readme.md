@@ -19,4 +19,4 @@ d) <sub> Crea els tests corresponents per verificar el funcionament de l'exercic
 **NIVELL 2** :star: :star:
 a)<sub>Verifica mitjançant tests l'execució de l'exercici Async / Await N2 E1 utilitzant Jest **Fake Timers**. </sub>
 
-**Archivos** = <sub> **sumOfNumber.js** y **sumOfNumber.test.js**</sub>
+Archivos : <sub> **sumOfNumber.js** y **sumOfNumber.test.js**</sub>
