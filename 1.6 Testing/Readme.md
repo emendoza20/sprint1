@@ -15,3 +15,8 @@ b) <sub> Crea els tests corresponents per verificar el funcionament de les dues 
 c) <sub> Crea els tests corresponents per verificar el funcionament de les funcions de l'exercici Promises i Callbacks N2 E1 i Promises i Callbacks N2 E2 (getEmployee() i getSalary()). </sub> :white_check_mark:
 
 d) <sub> Crea els tests corresponents per verificar el funcionament de l'exercici Async / Await N1 E2.</sub> :speech_balloon:
+
+**NIVELL 2** :star: :star:
+a)<sub>Verifica mitjançant tests l'execució de l'exercici Async / Await N2 E1 utilitzant Jest **Fake Timers**. </sub>
+
+**Archivos** = <sub> **sumOfNumber.js** y **sumOfNumber.test.js**</sub>
