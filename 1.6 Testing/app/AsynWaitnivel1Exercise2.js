@@ -1,22 +1,15 @@
-const functPromise = () => {
-  return new Promise((resolve, reject) => {
-      setTimeout(() => {resolve("Try again....for two seconds");}, 2000)
-  }) 
+async function promesaTime() {
+  let result = await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("La promesa ha sido resuelta después de 5 segundos.");
+    },5000);
+  });
+
+  return result;
 }
+promesaTime().then((result) => {
+  console.log(result);
+});
 
-const functAsincrona = async (arg) => {
-  if (arg) {
-    throw new Error('La función no espera argumentos');
-  }
-  try {
-      const result = await functPromise();
-      return result;
-    }
-    catch(err) {
-      throw new Error('Hubo un error en la función asíncrona');
-    } 
-}
-
-
-module.exports = { functAsincrona };
+module.exports = { promesaTime};
   
