@@ -19,4 +19,6 @@ d) <sub> Crea els tests corresponents per verificar el funcionament de l'exercic
 **NIVELL 2** :star: :star:
 
 a) <sub>Verifica mitjançant tests l'execució de l'exercici Async / Await N2 E1 utilitzant Jest Fake Timers. </sub>
-<sub>  ***Archivos*** => **sumOfNumber.js** y **sumOfNumber.test.js**</sub>  :star: :star:
+<sub>  ***Archivos*** => **sumOfNumber.js** y **sumOfNumber.test.js**</sub>  :white_check_mark:
+
+b)<sub>Crea un mock que comprovi les crides al constructor de la classe Persona i al seu mètode. dirNom() en l'exercici Classes & Arrow Functions - N2 E2 i testeja que funcionen</sub> <sub>  ***Archivos*** => **persona.js** y **persona.test.js**</sub>  :white_check_mark:

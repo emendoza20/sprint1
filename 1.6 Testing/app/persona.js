@@ -7,5 +7,7 @@ class Persona {
     console.log(this.nom);
   }
 }
+const person = new Persona("John");
+person.dirNom(); // Output: "John"
 
 module.exports = Persona;

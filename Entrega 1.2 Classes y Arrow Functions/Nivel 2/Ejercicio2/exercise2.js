@@ -1,10 +1,11 @@
-let Person = {
-   nom: "Elizabeth",
-    
-  };
-  
-Person.dirNom= () =>{console.log(Person.nom)}
-  
-  Person.dirNom(); 
+class Persona {
+  constructor(nom) {
+    this.nom = nom;
+  }
 
- 
+  dirNom() {
+    console.log(this.nom);
+  }
+}
+const person = new Persona("John");
+person.dirNom(); 
