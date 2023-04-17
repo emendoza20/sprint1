@@ -1,4 +1,5 @@
-- Exercici 1
+Nivel 2 :star::star:
+- Exercici 1 
 Mostra per consola el nom i cognoms de l'usuari/ària mitjançant template literals, guardant-los en variables i referenciant-les en la impressió del missatge.
 
 Desarrollo:

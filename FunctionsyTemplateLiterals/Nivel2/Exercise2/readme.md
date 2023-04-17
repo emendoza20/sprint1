@@ -1,4 +1,4 @@
-Nivel 2 
+Nivel 2  :star::star:
 Exercise 2
 
 Invoca una función que devuelva un valor desde dentro de una template literal.

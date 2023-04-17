@@ -1,7 +1,5 @@
-
-function showName (nombre){
-    console.log(nombre)
+function showName(nombre) {
+  console.log(nombre);
 }
 
-showName('Elizabeth')
- 
+showName("Elizabeth");

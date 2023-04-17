@@ -1,5 +1,3 @@
- 
-
-let showInfo = (name) =>  console.log(`${name}`);
+let showInfo = (name) => console.log(`${name}`);
 
 showInfo("Elizabeth");
