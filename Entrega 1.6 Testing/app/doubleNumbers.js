@@ -1,8 +1,7 @@
 const showDouble = async (num) => {
     return new Promise((resolve, reject) => {
-      const timeoutId = setTimeout(() => {
         resolve(num * 2);
-      }, 2000);
+      
     });
   };
   
