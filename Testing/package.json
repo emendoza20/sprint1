@@ -1,0 +1,16 @@
+{
+  "name": "1.6-testing",
+  "version": "1.0.0",
+  "description": "inicio del proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-fake-timers": "^1.0.2"
+  }
+}
