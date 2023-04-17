@@ -7,5 +7,5 @@ class Persona {
     console.log(this.nom);
   }
 }
-const person = new Persona("John");
+const person = new Persona("Elizabeth");
 person.dirNom(); 
