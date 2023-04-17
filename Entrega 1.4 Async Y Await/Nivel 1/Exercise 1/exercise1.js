@@ -35,7 +35,8 @@ let employees = [
        if (finder) {
          resolve(finder);
        } else {
-         reject("ERROR No existe ese usuario");
+        reject(new Error("ERROR: No existe ese usuario"));
+         //reject("ERROR No existe ese usuario");
        }
    
      });
