@@ -1,8 +1,3 @@
- 
-
-let Operation = (a, b) => a + b;
-
-
- let Result=Operation(5,3)
-
-console.log(Result)
+((a, b) => {
+  console.log(a + b);
+})(3, 4);
