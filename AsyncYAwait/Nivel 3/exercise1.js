@@ -26,7 +26,7 @@ const sumOfNumbers= async (a, b, c)=> {
     ResultC = await showDouble(c);
   return ResultA  + ResultB + ResultC;
 }
-sumOfNumbers(1, '2', 'u')
+sumOfNumbers(1,'u', 'f')
   .then((result) =>
     console.log('Result sumOfNumber:', result)
   )
@@ -37,4 +37,6 @@ sumOfNumbers(1, '2', 'u')
     console.log('Result sumOfNumbers:', result)
   )
   .catch((err) => console.log(err))
+  
+
   
